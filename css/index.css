@@ -1,0 +1,90 @@
+* {font-family: 'Roboto Mono', monospace;}
+
+/* NAVBAR */
+nav {background-color: #001540 !important;
+	background: linear-gradient(177deg, rgba(0,21,64,1) 0%, rgba(2,46,139,0.9360119047619048) 100%) !important;
+	opacity: 0.8;}
+.social-nav{
+	color: #f8f9fa;
+	font-size: 1.3em;}
+.social-nav:hover{
+	background-color: gray;}
+
+@media (max-width: 991.98px) {
+	.nav-padding li {
+		margin-right: 40px;
+	}
+	.nav-padding li:last-child {
+		margin-right: 0px;
+	}
+}
+/* ##### */
+
+/* SOBRE */
+.blink {animation: blinker 1.5s infinite;}
+@keyframes blinker {
+    0%   {color: #f8f9fa;    }
+    49%  {color: #f8f9fa;    }
+    60%  {color: transparent;}
+    99%  {color:transparent; }
+    100% {color: #f8f9fa;    }
+}
+#infos {
+	background-color: #001C57;
+	background: linear-gradient(8deg, rgba(0,28,87,1) 45%, rgba(2,46,139,0.9360119047619048) 89%);
+	color: #f8f9fa;
+	height: auto;
+	min-height: 100vh;}
+#infos img {
+	max-height: 100%;
+	height: auto;}
+/* ##### */
+
+
+/* SKILLS */
+#skills{
+	min-height: 100vh;
+	background: rgb(108,180,241);
+	background: linear-gradient(0deg, rgba(108,180,241,0.7399334733893557) 0%, rgba(185,221,251,1) 100%);}
+.card {
+	background-color: #EEEDFF !important;
+	border-radius: 5%;}
+.card-title{
+	margin-top: -12px;}
+.check{
+	color: #5cb85c;}
+.ico {
+	background: rgb(28,141,238);
+	background: linear-gradient(337deg, rgba(28,141,238,1) 45%, rgba(2,117,216,1) 89%);
+	margin-top: -40px;
+	font-size: 40px;
+	color: #f7f7f7;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;}
+.ico i {padding-top: 20px;}
+/* ###### */
+
+/* SCROLL TO TOP BUTTON */
+#btn-scroll {
+	color: white;
+	background-color: #001540 !important;
+	background: rgb(28,141,238);
+	background: linear-gradient(337deg, rgba(28,141,238,1) 45%, rgba(2,117,216,1) 89%);
+	/*background: linear-gradient(177deg, rgba(0,21,64,1) 0%, rgba(2,46,139,0.9360119047619048) 100%);*/
+	font-size: 3em;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	height: 66px;
+	width: 66px;
+	border-radius: 50%;
+	background-color: blue;
+	/*box-shadow: 0 0 10px rgba(255,255,255,0.25);*/
+	border: none;
+	outline: none;
+	cursor: pointer;}
+#btn-scroll i {
+	position: relative;
+	bottom: 7px;}
+/* ################### */
