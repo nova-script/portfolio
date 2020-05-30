@@ -45,12 +45,17 @@ nav {background-color: #001540 !important;
 #skills{
 	min-height: 100vh;
 	background: rgb(108,180,241);
-	background: linear-gradient(0deg, rgba(108,180,241,0.7399334733893557) 0%, rgba(185,221,251,1) 100%);}
-.card {
-	background-color: #EEEDFF !important;
-	border-radius: 5%;}
-.card-title{
-	margin-top: -12px;}
+	background: linear-gradient(0deg, rgba(108,180,241,0.7399334733893557) 0%, rgba(185,221,251,1) 100%);
+	position: relative;
+}
+
+.card-skills {
+	/*background-color: #EEEDFF !important; border-radius: 5%;*/
+	border-radius: 5%;
+	box-shadow: 8px 10px 15px rgba(136, 136, 136, 0.4);
+}
+.card-skills-title {margin-top: -12px;}
+
 .check{
 	color: #5cb85c;}
 .ico {
@@ -58,6 +63,7 @@ nav {background-color: #001540 !important;
 	background: linear-gradient(337deg, rgba(28,141,238,1) 45%, rgba(2,117,216,1) 89%);
 	margin-top: -40px;
 	font-size: 40px;
+	text-shadow: 2px 2px 20px rgba(136, 136, 136, 0.4);
 	color: #f7f7f7;
 	width: 80px;
 	height: 80px;
@@ -88,3 +94,60 @@ nav {background-color: #001540 !important;
 	position: relative;
 	bottom: 7px;}
 /* ################### */
+
+/*
+.inner {
+	overflow: hidden;
+}
+.inner img {
+	transition: all 1.5s ease;
+}
+.inner:hover img {
+	transform: scale(1.5);
+}*/
+
+.card-projects{
+	border: none;
+	box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.overlay {
+	color: white;
+}
+.overlay a {
+	color: white;
+	padding: 5px 15px;
+	border: 2px solid white;
+}
+.inner{
+	overflow: hidden;
+  	position: relative;
+  	display: inline-block;
+}
+.inner .overlay{
+  position: absolute;
+  display: flex; align-items: center; justify-content: center; flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.65);
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+.inner img {
+	  transition: transform 1.5s ease-in-out;
+}
+.inner:hover .overlay{
+  opacity: 1;
+}
+.inner:hover img {
+	transform: scale(1.2);
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
