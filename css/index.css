@@ -7,8 +7,6 @@ nav {background-color: #001540 !important;
 .social-nav{
 	color: #f8f9fa;
 	font-size: 1.3em;}
-.social-nav:hover{
-	background-color: gray;}
 
 @media (max-width: 991.98px) {
 	.nav-padding li {
@@ -36,6 +34,7 @@ nav {background-color: #001540 !important;
 	height: auto;
 	min-height: 100vh;}
 #infos img {
+	border-radius: 100%;
 	max-height: 100%;
 	height: auto;}
 /* ##### */
@@ -45,8 +44,7 @@ nav {background-color: #001540 !important;
 #skills{
 	min-height: 100vh;
 	background: rgb(108,180,241);
-	background: linear-gradient(0deg, rgba(108,180,241,0.7399334733893557) 0%, rgba(185,221,251,1) 100%);
-	position: relative;
+	background: linear-gradient(0deg, rgba(108,180,241,0.7399334733893557) 0%, rgba(185,221,251,.8) 100%); /* was 1.0*/
 }
 
 .card-skills {
@@ -95,17 +93,6 @@ nav {background-color: #001540 !important;
 	bottom: 7px;}
 /* ################### */
 
-/*
-.inner {
-	overflow: hidden;
-}
-.inner img {
-	transition: all 1.5s ease;
-}
-.inner:hover img {
-	transform: scale(1.5);
-}*/
-
 .card-projects{
 	border: none;
 	box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
@@ -119,7 +106,7 @@ nav {background-color: #001540 !important;
 	padding: 5px 15px;
 	border: 2px solid white;
 }
-.inner{
+.inner {
 	overflow: hidden;
   	position: relative;
   	display: inline-block;
@@ -135,13 +122,13 @@ nav {background-color: #001540 !important;
   opacity: 0;
   transition: opacity 500ms ease-in-out;
 }
-.inner img {
+.inner #fots {
 	  transition: transform 1.5s ease-in-out;
 }
 .inner:hover .overlay{
   opacity: 1;
 }
-.inner:hover img {
+.inner:hover #fots {
 	transform: scale(1.2);
 }
 
