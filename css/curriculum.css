@@ -1,0 +1,22 @@
+body {
+    background-color:  #0c0e28;
+}
+.img-thumbnail {
+    border-radius: 50%;
+}
+#general h5 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    width: auto !important;
+}
+
+#detailed {
+    background-color: white;
+    min-height: 100vh;
+    border-radius: 10px;
+}
+
+#detailed h4 {
+    border-bottom: 2px solid var(--dark);
+    padding-bottom: 3px;
+}
