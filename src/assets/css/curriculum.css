@@ -11,12 +11,19 @@ body {
 }
 
 #detailed {
+    color: black !important;
     background-color: white;
-    min-height: 100vh;
     border-radius: 10px;
 }
 
+.textwtf {
+    color: black !important;
+}
 #detailed h4 {
     border-bottom: 2px solid var(--dark);
     padding-bottom: 3px;
+}
+
+.mx-width-250 {
+    max-width: 250px;
 }
