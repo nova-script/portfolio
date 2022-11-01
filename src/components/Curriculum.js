@@ -19,8 +19,7 @@ function Curriculum() {
         initial={{opacity: 0, x: 100}}
         animate={{opacity: 1, x: 0}}
         exit={{opacity: 0, x: -100}}
-        transition={{duration: 1}}
-    >
+        transition={{duration: 1}}>
     <div className="container mb-5 mt-5">
       <div className='row my-5'>
         <div className='col-12 pl-5'>

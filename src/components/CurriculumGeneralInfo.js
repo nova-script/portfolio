@@ -4,7 +4,7 @@ import profilePicture from '../assets/img/curriculum/profile.jpg';
 
 function CurriculumGeneralInfo() {
     return (
-        <div className="col-4 px-5 py-5 text-light" id="general">
+        <div className="col-12 col-md-4 px-5 py-5 text-light" id="general">
                 <img className="img-thumbnail mb-5" src={profilePicture} alt=""/>
                 <h5>ABOUT ME</h5>
                 <small>Age: 22yo</small><br/>
