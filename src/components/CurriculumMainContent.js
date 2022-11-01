@@ -2,15 +2,13 @@
 
 function CurriculumMainContent() {
     return (
-        <div className="col-8 py-5" id="detailed">
+        <div className="col-12 col-md-8 py-5" id="detailed">
             <div className="text-center mb-5" id="detailed--header">
                 <h1>José Guilherme</h1>
                 <small>FULL-STACK WEB DEVELOPER</small>
             </div>
             <hr className="mb-5"/>
-            <div className="mx-width-250">
-                <h4 className="mb-4"><strong>CAREER OBJECTIVE</strong></h4>
-            </div>
+            <h4 className="mb-4"><strong>CAREER OBJECTIVE</strong></h4>
             <div className="text-justify mb-5">
                 <p>
                     Experienced webdeveloper using Python, now migrating to TypeScript and Node.<br/>
@@ -19,10 +17,8 @@ function CurriculumMainContent() {
             </div>
 
             <div class="row mb-5">
-                <div class="col-6">
-                    <div className="mx-width-250">
-                        <h4 class="mb-4"><strong>EDUCATION</strong></h4>
-                    </div>
+                <div class="col-12 col-md-6">
+                    <h4 class="mb-4"><strong>EDUCATION</strong></h4>
                     <h6><strong>(2013 - 2018) Language Course</strong></h6>
                     <h6><i class="fas fa-graduation-cap"></i> Advanced English</h6>
                     <small><i class="fas fa-university pr-2"></i> CILT - Centro Interescolar de Línguas</small>
@@ -34,10 +30,8 @@ function CurriculumMainContent() {
                     <h6><i class="fas fa-graduation-cap"></i> Software Engineering</h6>
                     <small><i class="fas fa-university pr-2"></i> UnB - University of Brasilia</small>
                 </div>
-                <div class="col-6">
-                    <div className="mx-width-250">
-                        <h4 class="mb-4"><strong>TECHNICAL PROFICIENCIES</strong></h4>
-                    </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-0">
+                    <h4 class="mb-4"><strong>TECHNICAL PROFICIENCIES</strong></h4>
 
                     <h6><strong>Programming languages:</strong></h6>
                     <p>Python, JavaScript, TypeScript, C/C++, Java, PHP7.</p>
@@ -58,14 +52,12 @@ function CurriculumMainContent() {
 
             <div class="row">
                 <div class="col-12">
-                    <div className="mx-width-250">
-                        <h4 class="mb-4"><strong>EXPERIENCE</strong></h4>
-                    </div>
+                    <h4 class="mb-4"><strong>EXPERIENCE</strong></h4>
                 </div>
             </div>
 
             <div class="row mb-3">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <h6><i class="fas fa-building pr-1"></i><strong> - Junior Developer @LedSHOW</strong></h6>
                     <small><i class="fas fa-laptop-house pr-1"></i> - &nbsp;Hybrid work</small>
                     <br/>
@@ -81,7 +73,7 @@ function CurriculumMainContent() {
                     <i class="fas fa-calendar pr-2"></i>[11/2021 &rArr; 06/2022] &#8226; <strong>8 months</strong>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
                     <h6><i class="fas fa-building pr-1"></i><strong> - Intern @DataPolicy</strong></h6>
                     <small><i class="fas fa-laptop-house pr-1"></i> - &nbsp;Remote work</small>
                     <br/>
@@ -98,9 +90,9 @@ function CurriculumMainContent() {
                     <i class="fas fa-calendar pr-2"></i>[06/2021 &rArr; 11/2021] &#8226; <strong>6 months</strong>
                 </div>
 
-                <div class="col-12 my-3"><br/></div>
+                <div class="col-12 d-none d-md-block my-md-3"><br/></div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
                     <h6><i class="fas fa-building pr-1"></i><strong> - Intern @Federal Police of Brazil</strong></h6>
                     <small><i class="fas fa-map-marked-alt pr-2"></i> - &nbsp;Brasília - DF</small>
                     <br/>
@@ -114,7 +106,7 @@ function CurriculumMainContent() {
                     <i class="fas fa-calendar pr-2"></i>[02/2021 &rArr; 06/2021] &#8226; <strong>5 months</strong>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
                     <h6><i class="fas fa-building pr-1"></i><strong> - Intern @Coding55</strong></h6>
                     <small><i class="fas fa-laptop-house pr-1"></i> - &nbsp;Remote work</small>
                     <br/>
@@ -134,10 +126,8 @@ function CurriculumMainContent() {
                     <hr/>
                 </div>
 
-                <div class="col-6">
-                    <div className="mx-width-250">
-                        <h4 class="mb-4"><strong>EXPERTISE</strong></h4>
-                    </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <h4 class="mb-4"><strong>EXPERTISE</strong></h4>
                     <ul class="pl-3">
                         <li class="mb-2">
                             Development of APIs;
@@ -151,10 +141,8 @@ function CurriculumMainContent() {
                     </ul>
                 </div>
 
-                <div class="col-6">
-                    <div className="mx-width-250">
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
                         <h4 class="mb-4"><strong>SOFT SKILLS</strong></h4>
-                    </div>
                     <ul class="pl-3">
                         <li class="mb-2">
                             Attentive Listening & Effective Communication Skills;
