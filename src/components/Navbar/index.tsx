@@ -6,7 +6,7 @@ import { GiButterflyFlower } from "react-icons/gi";
 import logo from "../../assets/img/logo2.png";
 
 import projectIcon from "./img/projectIcon.png";
-import blossomIcon from "./img/blossom2.png";
+import blossomIcon from "./img/blossom2a.png";
 
 import { IoHome, IoBriefcase } from "react-icons/io5";
 
@@ -17,6 +17,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="header flex items-center mt-5 gap-2 justify-center">
+        <img src={blossomIcon} width={40} />
         <h1 className="navbar-h1">Novascript</h1>
       </div>
 
