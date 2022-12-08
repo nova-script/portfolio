@@ -1,0 +1,14 @@
+.pink-button {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--soft-white);
+  font-weight: 600;
+  padding: 15px 25px;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.pink-button:hover {
+  background-color: #e57d906f;
+  color: var(--primary);
+}

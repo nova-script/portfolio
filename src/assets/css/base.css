@@ -1,9 +1,0 @@
-html, body {
-    overflow-x: hidden !important;
-    overflow-y: scroll;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
