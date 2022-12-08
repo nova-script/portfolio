@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: rgb(24, 26, 24);
+  --secondary: #e57d90;
+  --soft-white: #fcf1ef;
+}
+
+.App {
+  position: relative;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  height: 100% !important;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--soft-white);
+}
+
+/* Custom UI */
+h1 {
+  font-family: "Arvo", serif;
+  font-size: 70px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+h1.navbar-h1 {
+  font-family: "Arvo", serif;
+  font-size: 37px;
+  font-weight: 500;
+  color: var(--soft-white) !important;
+}
+
+h2 {
+  font-family: "Arvo", serif;
+  font-size: 40px;
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+p {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  color: var(--primary);
+  font-weight: 500;
+}
