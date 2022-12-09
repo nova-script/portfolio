@@ -40,8 +40,11 @@
   letter-spacing: 3px;
 }
 
-.navbar li.active {
-  border: 2px solid rgba(255, 255, 255, 0.2);
+.navbar a {
+  transition: background 0.35s;
+}
+
+.navbar a.active {
   border-radius: 8px;
   background: rgba(229, 125, 144, 0.4);
 }
