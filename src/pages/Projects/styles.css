@@ -1,0 +1,68 @@
+.project-box {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid var(--soft-pink);
+  box-shadow: 0px 0px 5px #f2ced8;
+}
+
+.project-box .img-wrapper {
+  position: relative;
+}
+
+.project-box img {
+  border-radius: 3px;
+}
+
+.project-box .img-overlay {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 0.1),
+    var(--soft-white)
+  );
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-box .overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.source-code {
+  color: gray !important;
+}
+
+.project-box .overlay a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--secondary);
+}
+
+.technology-stack-badge {
+  background-color: var(--secondary);
+  padding: 5px 15px;
+  border-radius: 50px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: var(--soft-white);
+  font-weight: 500;
+}
+
+.img-wrapper {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  transition: 3s;
+}
+
+.project-box:hover > .img-wrapper img {
+  scale: 1.2;
+}
