@@ -19,14 +19,14 @@ function renderProfessionalExperience() {
     (experience: ProfessionalExperienceType) => {
       return (
         <div className="grid grid-cols-8 gap-3 mb-10">
-          <div className="col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <p className="text-[16px] mt-2">{experience.startDate}</p>
             <p className="text-[16px] pl-7">⇒</p>
             <p className="text-[16px]">{experience.finishDate}</p>
             <hr className="my-3" />
             <p className="text-[16px]">{experience.type}</p>
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 md:col-span-7">
             <p>
               <strong>{experience.title}</strong>
             </p>
