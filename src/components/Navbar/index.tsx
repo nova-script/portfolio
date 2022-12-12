@@ -3,13 +3,13 @@ import "./styles.css";
 /* Icons */
 import { AiOutlineHome } from "react-icons/ai";
 import { GiButterflyFlower } from "react-icons/gi";
-import logo from "../../assets/img/logo2.png";
 
 /* React Router Dom */
 import { Link } from "react-router-dom";
 
 import projectIcon from "./img/projectIcon.png";
 import blossomIcon from "./img/blossom2a.png";
+import logo from "./img/logo.png";
 
 import { IoHome, IoBriefcase } from "react-icons/io5";
 
@@ -26,9 +26,10 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="header flex items-center mt-5 gap-2 justify-center">
-        <img src={blossomIcon} width={40} />
-        <h1 className="navbar-h1">Novascript</h1>
+      <div className="header">
+        <div className="flex items-center mt-5 gap-2 justify-center">
+          <img src={logo} width="90%" />
+        </div>
       </div>
 
       <ul className="px-5 mt-[50px] pb-[100px]">
@@ -64,21 +65,28 @@ export default function Navbar() {
 
         <li>
           <Link
-            to="/curriculum"
+            to="/resume"
             className={
               `flex items-center gap-5 my-8 p-2 ` +
-              (currentPath === "/curriculum" ? "active" : "")
+              (currentPath === "/resume" ? "active" : "")
             }
           >
             <div className="icon-box">
               <IoBriefcase color="#e57d90" size={20} />
             </div>
-            <span>CURRICULUM</span>
+            <span>RESUME</span>
           </Link>
         </li>
       </ul>
 
       <div>
+        <div className="text-center mb-5">
+          <p className="text-soft-white navbar-subheading">
+            DO YOU HAVE A DREAM?
+            <br />
+            LET ME CODE IT.
+          </p>
+        </div>
         <div className="line mx-7" />
         <div className="social-media flex gap-3 my-5 justify-center">
           <a>

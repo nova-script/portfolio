@@ -12,7 +12,7 @@
   background: linear-gradient(
       180deg,
       rgba(229, 125, 144, 0.8),
-      rgba(0, 0, 0, 1)
+      rgba(33, 27, 23, 1)
     ),
     url(./img/navbg2.jpg);
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 .navbar li {
   color: var(--soft-white);
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 3px;
 }
 
@@ -64,4 +64,10 @@
   background-color: var(--soft-white);
   opacity: 0.4;
   border-radius: 50%;
+}
+
+.navbar-subheading {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
