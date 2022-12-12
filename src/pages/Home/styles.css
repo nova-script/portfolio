@@ -1,5 +1,5 @@
 .home .profile-picture {
   border-radius: 50%;
   border: 5px solid white;
-  box-shadow: 0px 0px 1px black;
+  box-shadow: 0px 0px 5px #f2ced8;
 }

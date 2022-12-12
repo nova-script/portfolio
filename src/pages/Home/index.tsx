@@ -11,12 +11,17 @@ import { motion } from "framer-motion";
 /* Recoil */
 import { useRecoilState } from "recoil";
 import { currentPathAtom } from "../../App";
+import WhiteButton from "../../components/_shared/WhiteButton";
 
 export default function Home() {
   const [currentPath, setCurrentPath] = useRecoilState(currentPathAtom);
 
   useEffect(() => {
     setCurrentPath(window.location.pathname);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -30,17 +35,57 @@ export default function Home() {
       <div className="pl-10 mt-[15px]">
         <img src={profilePicture} width={300} className="profile-picture" />
         <div className="flex items-center gap-10">
-          <div className="flex mt-5 items-center gap-5 mb-[25px]">
+          <div className="mt-5 items-center gap-5 mb-[25px]">
             <div>
-              <h1 className="leading-none">Novascript,</h1>
+              <h1 className="leading-none">Nova Fernandes,</h1>
               <h2 className="leading-none">Full-stack developer.</h2>
               <p className="max-w-[650px] mt-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                I produce elegant, performant and accessible websites.
+                <br />
+                <strong> I'm absolutely in love with coding</strong>, mainly
+                working around <strong> React, Express and Django.</strong>
+                <br />
+                <br />
+                I'm 22 years old and currently living in Brasília - Brazil.
               </p>
-              <PinkButton title="Discover my projects" className="mt-10" />
+              <div className="flex gap-5">
+                <PinkButton title="Discover my projects" className="mt-10" />
+                <WhiteButton title="Hire me" className="mt-10" />
+              </div>
+            </div>
+            <hr className="my-8" />
+            <div className="mb-10">
+              <h2>Know a little more about me:</h2>
+
+              <div className="pl-8">
+                <h3 className="mt-5">&#x2022; What are my pronouns?</h3>
+
+                <p className="max-w-[650px] mt-5 text-justify">
+                  I am <strong>non-binary</strong>, and my pronouns are
+                  <strong> He/She/They.</strong>
+                  <br />
+                  You can use any! 😊
+                </p>
+              </div>
+
+              <div className="pl-8">
+                <h3 className="mt-5">&#x2022; Why "NovaScript"?</h3>
+                <p className="max-w-[650px] mt-5 text-justify">
+                  <strong>NovaScript</strong> is a combination of
+                  <strong> "Nova"</strong> (my first name) and{" "}
+                  <strong>"Script"</strong> from JavaScript (my preferred
+                  programming language).
+                </p>
+              </div>
+
+              <div className="pl-8">
+                <h3 className="mt-5">&#x2022; What are you hobbies?</h3>
+
+                <p className="max-w-[650px] mt-5 text-justify">
+                  My main hobbies are playing video-games, exercising, reading
+                  philosophy books and listening to podcasts!
+                </p>
+              </div>
             </div>
           </div>
         </div>
