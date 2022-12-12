@@ -34,8 +34,8 @@ function renderProjects() {
 
   return projects.map((project: Project) => {
     return (
-      <div className="project-box-wrapper col-span-5">
-        <div className="project-box p-3 pb-0 h-[100%] ">
+      <div className="project-box-wrapper col-span-10 md:col-span-5 mb-5">
+        <div className="project-box p-3 pb-0 h-[100%]">
           <div className="img-wrapper">
             <img width="100%" src={project.image} />
             <div className="img-overlay"></div>
@@ -100,12 +100,16 @@ export default function Projects() {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
       transition={{ duration: 1 }}
-      className="projects pl-10 pt-[90px]"
+      className="projects px-5 lg:pl-10 pt-[90px]"
     >
-      <div className="container mx-auto max-w-[1024px]">
+      <div className="container lg:max-w-[768px] xl:max-w-[1024px]">
         <div className="pb-10">
-          <h1 className="leading-1">Websites Everywhere!</h1>
-          <h2 className="leading-none">Some examples of my work! :)</h2>
+          <h1 className="leading-none text-[50px] md:text[70px]">
+            Websites Everywhere!
+          </h1>
+          <h2 className="leading-none mt-3 text-[28px] md:text[40px]">
+            Some examples of my work! :)
+          </h2>
           <hr className="mt-5" />
           <p className="mt-10 text-justify">
             As you should know by now, I'm a
@@ -116,7 +120,9 @@ export default function Projects() {
             <br />
           </p>
         </div>
-        <div className="grid grid-cols-10 gap-5 mt-10">{renderProjects()}</div>
+        <div className="grid grid-cols-10 md:gap-5 mt-10">
+          {renderProjects()}
+        </div>
       </div>
     </motion.section>
   );
