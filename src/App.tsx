@@ -14,6 +14,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 
 /* Recoil */
 import { RecoilRoot, atom } from "recoil";
+import WhatsappButton from "./components/_shared/WhatsappButton";
 
 export const currentPathAtom = atom({
   key: "currentPath",
@@ -26,6 +27,7 @@ function App() {
       <RecoilRoot>
         <BrowserRouter>
           <Navbar />
+          <WhatsappButton />
           <div className="app-content">
             <div className="sidebar-offset"></div>
             <AnimatedRoutes />
