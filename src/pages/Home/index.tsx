@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import { useRecoilState } from "recoil";
 import { currentPathAtom } from "../../App";
 import WhiteButton from "../../components/_shared/WhiteButton";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [currentPath, setCurrentPath] = useRecoilState(currentPathAtom);
@@ -30,11 +31,14 @@ export default function Home() {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
       transition={{ duration: 1 }}
-      className="home pl-10 pt-[90px]"
+      className="home lg:pl-10 pt-[90px]"
     >
-      <div className="pl-10 mt-[15px]">
-        <img src={profilePicture} width={300} className="profile-picture" />
-        <div className="flex items-center gap-10">
+      <div className="md:pl-10 mt-[15px]">
+        <div className="flex justify-center md:justify-start ">
+          <img src={profilePicture} width={300} className="profile-picture" />
+        </div>
+
+        <div className="px-5 text-en flex items-center gap-10">
           <div className="mt-5 items-center gap-5 mb-[25px]">
             <div>
               <h1 className="leading-none">Nova Fernandes,</h1>
@@ -49,15 +53,19 @@ export default function Home() {
                 I'm 22 years old and currently living in Brasília - Brazil.
               </p>
               <div className="flex gap-5">
-                <PinkButton title="Discover my projects" className="mt-10" />
-                <WhiteButton title="Hire me" className="mt-10" />
+                <Link to="/projects" className="mt-10 pink-button">
+                  Discover my projects
+                </Link>
+                <Link to="/resume" className="mt-10 white-button">
+                  HIRE ME
+                </Link>
               </div>
             </div>
             <hr className="my-8" />
             <div className="mb-10">
               <h2>Know a little more about me:</h2>
 
-              <div className="pl-8">
+              <div className="pl-0 md:pl-8">
                 <h3 className="mt-5">&#x2022; What are my pronouns?</h3>
 
                 <p className="max-w-[650px] mt-5 text-justify">
@@ -68,7 +76,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="pl-8">
+              <div className="pl-0 md:pl-8">
                 <h3 className="mt-5">&#x2022; Why "NovaScript"?</h3>
                 <p className="max-w-[650px] mt-5 text-justify">
                   <strong>NovaScript</strong> is a combination of
@@ -78,7 +86,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="pl-8">
+              <div className="pl-0 md:pl-8">
                 <h3 className="mt-5">&#x2022; What are you hobbies?</h3>
 
                 <p className="max-w-[650px] mt-5 text-justify">
