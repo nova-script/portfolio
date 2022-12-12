@@ -1,0 +1,36 @@
+.whatsapp-button {
+  color: white;
+  z-index: 99;
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  background: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 50%;
+  transition: 0.35s;
+}
+
+.whatsapp-button:hover {
+  background: #7a7a7a;
+}
+
+@keyframes animate-whatsapp-button {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.whatsapp-button {
+  scale: 0;
+  animation-name: animate-whatsapp-button;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
