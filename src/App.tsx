@@ -28,8 +28,9 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <WhatsappButton />
+          <div className="lg:hidden topbar-offset"></div>
           <div className="app-content">
-            <div className="sidebar-offset"></div>
+            <div className="hidden lg:block sidebar-offset"></div>
             <AnimatedRoutes />
           </div>
         </BrowserRouter>
