@@ -6,7 +6,8 @@ import { AnimatePresence } from "framer-motion";
 /* Custom Components */
 import Projects from "../../pages/Projects";
 import Home from "../../pages/Home";
-import Curriculum from "../../pages/Curriculum";
+import Curriculum from "../../pages/Resume";
+import Resume from "../../pages/Resume";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -16,7 +17,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/curriculum" element={<Curriculum />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </AnimatePresence>
   );
