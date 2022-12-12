@@ -1,0 +1,14 @@
+.white-button {
+  display: inline-block;
+  background-color: #f1ced8;
+  color: var(--soft-black);
+  font-weight: 600;
+  padding: 15px 25px;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.white-button:hover {
+  background-color: var(--secondary);
+  color: var(--soft-white);
+}
